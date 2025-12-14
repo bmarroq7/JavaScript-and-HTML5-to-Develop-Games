@@ -1,0 +1,108 @@
+#main-container{
+    display:flex; 
+    flex-direction:column; 
+    height: 75vh; 
+    align-items: center; 
+  /*   background-color: red;  */
+    position: relative; 
+    top: 100px; 
+  }
+  
+  #gameSelection-container{
+    display:flex; 
+    justify-content: space-around; 
+    align-items: center; 
+  /*   background-color: yellow;  */
+    width: 75%; 
+    height: 50%; 
+     border: 5px solid black; 
+  }
+  
+  #rock:hover{
+   color: yellow; 
+  }
+  
+  #paper:hover{ 
+    color: blue; 
+  }
+  
+  #scissors:hover{
+     color: red;
+  }
+  
+  /* cpu is choosing */ 
+   
+  .rock{
+     animation-name: imagetransition;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; 
+  }
+  
+  .paper{ 
+     animation-name: imagetransitiontwo;
+      animation-duration: 1s;
+      animation-iteration-count: infinite; 
+  }
+  
+  .scissors{
+     animation-name: imagetransitionthree;
+      animation-duration: 1s;
+       animation-iteration-count: infinite; 
+  }
+  @keyframes imagetransition {
+    0% {
+      color: blue; 
+    }
+   
+  }
+  
+  @keyframes imagetransitiontwo {
+    
+    50% {
+     color: red; 
+    }
+  
+  }
+  
+  @keyframes imagetransitionthree {
+    
+    100% {
+    color: yellow; 
+    }
+  }
+  
+  
+  
+  /* win/lose/draw section */
+  .add-animation{
+    animation-name: header-beats;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes  header-beats{
+    0%{
+      transform: scale(2);
+    }
+    50%{
+      transform: scale(1.6);
+    }
+   
+  }
+
+
+  /* win/lose/draw section */
+  
+  .player-selection-box {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .item1 {
+    order: 2;
+  }
+  .item2 {
+    order: 1;
+  }
